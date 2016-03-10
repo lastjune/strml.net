@@ -1,0 +1,87 @@
+/**
+ *
+ * Hi,我是杜大叔，一个前端菜鸟。
+ *
+ * 我的工作是开发网站。
+ *
+ * 不如看看一些演示吧。
+ */
+
+
+/**
+ * 让我们开始吧，先来一点酷炫的动画吧。。。 
+ */
+
+* {
+    -webkit-transition: all 1s;
+}
+
+
+/**
+ * 没有什么效果是不是？
+ * 别着急，我们继续往下看
+ */
+
+html {
+    background: #ffff00;
+}
+
+
+/**
+ * 是不是太晃眼了？
+ * 让我们再来调整一下
+ */
+
+html {
+    background: #000;
+}
+
+
+/**
+ * 不如去太空看看？
+ */
+
+html {
+    background: url('../img/universe.jpg') top center no-repeat;
+    background-size:100%;
+}
+
+body {
+    /*background: #000;*/
+    overflow: hidden;
+    -webkit-animation-name: pulse;
+    -webkit-animation-duration: 30s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+
+/**
+ * 是不是舒服一点了？
+ * 继续
+ */
+
+pre,
+a {
+    color: #fff;
+}
+
+
+/**
+ * 让我们来调整一下编辑框的样式
+ */
+
+pre:not(empyt) {
+    overflow: auto;
+    /*background: #555f7b;*/
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 44.6%;
+    width: 49%;
+    font-size: 14px;
+    font-family: monospace;
+    padding: 10px 10px 20px;
+    box-shadow: -4px 4px 2px 0 rgba(0, 0, 0, 0.3);
+    white-space: pre-wrap;
+    outline: 0;
+}

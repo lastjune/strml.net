@@ -33,7 +33,8 @@ html {
  */
 
 html {
-    background: #000;
+    background: #CCFFFF;
+    color:#000;
 }
 
 
@@ -41,13 +42,47 @@ html {
  * 不如去太空看看？
  */
 
-html {
-    background: url('../img/universe.jpg') top center no-repeat;
-    background-size:100%;
+.stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
 }
 
+html{
+    color:#fff;
+}
+
+.stars {
+  background:#000 url('../img/stars.png') repeat top center;
+  z-index:0;
+}
+
+/**
+ * 星星怎么不会闪烁呢？
+ * 这不科学啊
+ * 让我们再来调整一下看看
+ */
+
+.twinkling{
+  background:transparent url('../img/twinkling.png') repeat top center;
+  z-index:1;
+  -webkit-animation:move-twink-back 200s linear infinite;
+}
+
+/**
+ * 美丽的夜空
+ * 闪烁的星星
+ * 这可都是CSS3动画实现的效果哦
+ * 是不是很惊艳
+ * 让我们继续
+ */
+
 body {
-    /*background: #000;*/
     overflow: hidden;
     -webkit-animation-name: pulse;
     -webkit-animation-duration: 30s;
@@ -56,14 +91,9 @@ body {
 }
 
 
-/**
- * 是不是舒服一点了？
- * 继续
- */
-
 pre,
 a {
-    color: #fff;
+    z-index:3;
 }
 
 
@@ -73,9 +103,6 @@ a {
 
 pre:not(empyt) {
     overflow: auto;
-    /*background: #555f7b;*/
-    border: 1px solid #ccc;
-    border-radius: 5px;
     max-height: 44.6%;
     width: 49%;
     font-size: 14px;
@@ -84,4 +111,45 @@ pre:not(empyt) {
     box-shadow: -4px 4px 2px 0 rgba(0, 0, 0, 0.3);
     white-space: pre-wrap;
     outline: 0;
+}
+
+/**
+ * 让我们挪一挪位置
+ */
+
+#style-text {
+  -webkit-transform: translateX(95%);
+  position: absolute;
+}
+
+/**
+ * 来给我们的代码上点色
+ */
+
+.comment       { color: #09F2F5; font-style: italic; }
+.selector      { color: #E69F0F; }
+.selector .key { color: #64D5EA; }
+.key           { color: #64D5EA; }
+.value         { color: #BE84F2; }
+.value.px      { color: #F92772; }
+
+
+body {
+  -webkit-perspective: 1000px;
+}
+
+#work-text,#style-text {
+  -webkit-transform: translateX(98.5%) rotateY(-10deg);
+  -webkit-transform-origin: right;
+  max-height: 94.5%;
+}
+
+/**
+ * 下面来介绍下我自己
+ * 如果有兴趣合作请与我联系
+ */
+
+pre:not(#style-text) {
+  -webkit-transform: rotateY(10deg);
+  -webkit-transform-origin: left;
 }

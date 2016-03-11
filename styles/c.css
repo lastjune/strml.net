@@ -1,6 +1,6 @@
 
 /**
- * The text could use some tweaks.
+ * 先调整一下字体
  */
 
 .md {
@@ -23,11 +23,17 @@
 }
 
 /**
- * That's better.
+ * 好看多了吧.
  *
- * If you want to contact me, use the PGP keys on the left.
- *
- * You know, if you're into that sort of thing.
+ */
+
+#work-text{
+     max-height:50%;
+}
+
+/**
+ * 如果你有兴趣联系我
+ * 左边是我的PGP
  */
 
 #pgp-text {

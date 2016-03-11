@@ -1,0 +1,37 @@
+
+/**
+ * 好了差不多了
+ */
+
+ pre:hover{
+   box-shadow: 0px 0px 40px 5px rgba(255,255,255,0.4);
+ }
+
+ #skip-animation, #pause-resume {
+   display: none;
+ }
+ 
+/**
+ * 致谢：
+ *
+ * 此动画简历创意，并非本人原创，由 Samuel Reed 的github以及个人网站http://strml.net 学习借鉴修改而成
+ * 而据Samuel Reed介绍，此创意学习自 Jake Albaugh
+ *
+ * 更多关于Jake Albaugh 的信息可以通过下面这个链接找到
+ * http://codepen.io/jakealbaugh/
+ *
+ * 更多关于Samuel Reed的信息
+ * http://strml.net 
+ */
+
+
+.value {
+  text-shadow: 0px 15px 1px white;
+}
+
+/**
+ * 亲自试一试吧！
+ * 你可以自由编辑一些CSS效果
+ */
+
+
